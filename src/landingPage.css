@@ -1,0 +1,35 @@
+.trans {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease-in-out forwards;
+}
+
+.fade-down {
+    opacity: 0;
+    animation: fadeDownAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeDownAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

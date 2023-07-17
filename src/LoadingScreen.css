@@ -1,0 +1,57 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+    /* Adjust the height as needed */
+}
+
+
+.circle-container {
+    position: relative;
+    margin: 10px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 45px;
+    border-radius: 30%;
+    background: linear-gradient(rgba(92, 150, 169, 0.9) 0%, rgba(63, 188, 230, 0.7) 50%, rgba(255, 0, 0, 0.7) 40%, rgba(159, 4, 4, 0.9) 100%);
+    /* Adjust the color as needed */
+    animation: fallingCircle 2s infinite;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.circle1 {
+    animation-delay: 0.1s;
+}
+
+.circle2 {
+    animation-delay: 0.3s;
+}
+
+.circle3 {
+    animation-delay: 0.5s;
+}
+
+@keyframes fallingCircle {
+    0% {
+        transform: translate(0%, 0%) rotate(0deg);
+        /* Start position above the container */
+    }
+
+    50% {
+        transform: translate(0%, 0vh) rotate(45deg);
+        /* End position below the container */
+    }
+
+    100% {
+        transform: translate(0%, 0vh) rotate(0deg);
+        /* End position below the container */
+    }
+}

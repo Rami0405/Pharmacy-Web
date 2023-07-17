@@ -1,0 +1,40 @@
+.container-xyz {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicked-xyz {
+    transition: 0.3s;
+}
+
+.clicked-xyz:hover {
+    transform: scale(0.9);
+}
+
+.card-container-xyz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card-xyz {
+    flex-basis: 20%;
+    /* Each card occupies 20% of the container width by default */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .card-container-xyz {
+        flex-wrap: wrap;
+        /* Allow cards to wrap to the next line */
+    }
+
+    .card-xyz {
+        flex-basis: 47%;
+        /* Display two cards per row */
+    }
+}

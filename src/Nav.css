@@ -1,0 +1,128 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Add box shadow */
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 14px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s,
+        border-radius 0.3s;
+    /* Add transition for box-shadow */
+}
+
+.search-bar.has-value input[type="text"] {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.circleee {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    color: white;
+    /* Adjust the color as desired */
+}
+
+.icon {
+    color: black;
+    /* Adjust the color as desired */
+}
+
+.search-bar input[type="text"]:focus {
+    box-shadow: 0 0 6px 3px rgba(65, 202, 2, 0.3);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #41ca02;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    transition: transform 0.1s, box-shadow 0.3s;
+}
+
+.search-bar input[type="text"]+.search-button {
+    opacity: 1;
+}
+
+.search-button:active {
+    transform: scale(0.9);
+}
+
+.search-bar input[type="text"]:focus+.search-button {
+    box-shadow: 2px 0 6px 3px rgba(65, 202, 2, 0.4);
+}
+
+.store-link {
+    display: flex;
+}
+
+.store-link a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.store-link a:hover {
+    transform: scale(0.9);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+    }
+
+    .search-bar input[type="text"] {
+        margin-right: 0;
+    }
+}
