@@ -111,12 +111,14 @@ const CylinderPage = ({ searchQuery }) => {
             <h1>Our products</h1>
             <div className="filter-container">
                 {/* Filter input */}
+                <p>Filter by &nbsp;</p>
                 <select value={filter} className='filter-list' onChange={handleFilterChange}>
                     <option value="">All</option>
                     <option value="mg">mg</option>
                     <option value="softgels">softgels</option>
                 </select>
                 {/* Sort options */}
+                <p>Sort by &nbsp;</p>
                 <select value={sort} className='sort-list' onChange={handleSortChange}>
                     <option value="">Default</option>
                     <option value="asc">Price: Low to High</option>
