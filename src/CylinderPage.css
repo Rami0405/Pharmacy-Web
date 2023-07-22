@@ -21,6 +21,65 @@
     gap: 16px;
 }
 
+select {
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+/* Style the filter container */
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Style the filter input */
+.filter-list {
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-list:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style the selected filter input */
+.filter-list:focus {
+    background-color: #41ca02;
+    color: #ffffff;
+}
+
+/* Style the sort options */
+.sort-list {
+    font-size: 16px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sort-list:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style the selected sort option */
+.sort-list:focus {
+    background-color: #41ca02;
+    color: #ffffff;
+}
+
 .card-xyz {
     flex-basis: 20%;
     /* Each card occupies 20% of the container width by default */
