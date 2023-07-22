@@ -59,9 +59,11 @@ const CylinderPage = ({ searchQuery }) => {
     ];
 
     // Filter products based on search query
-    const filteredProducts = products.filter((product) =>
-        product.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    const filteredProducts = searchQuery
+        ? products.filter((product) =>
+            product.title.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+        : products;
 
     return (
         <div className="container-xyz">

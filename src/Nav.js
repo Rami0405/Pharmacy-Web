@@ -16,6 +16,7 @@ const Navbar = ({ onSearch }) => {
 
     const handleChange = (e) => {
         setSearchQuery(e.target.value);
+        onSearch(e.target.value);
     };
 
     return (
